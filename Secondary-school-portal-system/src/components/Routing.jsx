@@ -1,6 +1,6 @@
-import { Routes, Route, NavLink } from 'react-router-dom';
+import{ NavLink, Routes, Route } from 'react-router-dom';
 import About from './About';
-import Home from './HomePage';
+import Login from '../pages/auth/Login';
 
 function Routing() {
   return (
@@ -11,7 +11,7 @@ function Routing() {
       </nav>
 
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Login />} />
         <Route path="/about" element={<About />} />
       </Routes>
     </>
